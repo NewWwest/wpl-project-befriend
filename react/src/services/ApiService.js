@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api_url = "http://localhost:3000/befriend/";
-const defaultOptions = defaultOptions;
+const defaultOptions = { withCredentials: true };
 const handleResponse = (resp) => {
     const data = resp?.data;
     if(data?.message === "OK"){
